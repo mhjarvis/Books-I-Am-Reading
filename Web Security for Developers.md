@@ -47,3 +47,5 @@ JavaScript code will be executed when rendering a webpage, so ensure to use the 
 
 Because of security concerns, most modern JavaScript code is executed within a sandbox. 
 
+## <strong>How Web Servers Work</strong>
+
