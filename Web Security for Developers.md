@@ -38,3 +38,4 @@ Because there is constant exchange of information between user and server, there
 ### <strong>Encryption</strong>
 TLS which leads to HTTPS. Requires TLS handshake, where both parties agree on an encryption method (cipher) and exchange encryption keys.
 
+## <strong>How Browsers Work</strong>
