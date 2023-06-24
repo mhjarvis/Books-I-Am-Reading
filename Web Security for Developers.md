@@ -38,7 +38,7 @@ Because there is constant exchange of information between user and server, there
 ### <strong>Encryption</strong>
 TLS which leads to HTTPS. Requires TLS handshake, where both parties agree on an encryption method (cipher) and exchange encryption keys.
 
-## <strong>How Browsers Work</strong>
+## <strong>3. How Browsers Work</strong>
 
 ### <strong>Web Page Rendering</strong>
 The ```rendering pipeline``` is the software component responsible for transforming a web page's HTML into something you can view. When  HTTP response is received, the browser parses the body of the response into a Document Object Model (DOM). Styling is applied to the DOM. Once complete, the webpage is 'drawn' onscreen. JavaScript is also loaed and executed as it is encountered. 
@@ -47,5 +47,5 @@ JavaScript code will be executed when rendering a webpage, so ensure to use the 
 
 Because of security concerns, most modern JavaScript code is executed within a sandbox. 
 
-## <strong>How Web Servers Work</strong>
+## <strong>4. How Web Servers Work</strong>
 
