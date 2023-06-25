@@ -66,3 +66,4 @@ A static response will show in the url with the ```.html``` suffix, indicating t
 Static resources implement the use of a database. This makes it easier to add new products by adding new rows to a database and implementing content via JavaScript. The same goes for websites like Google, where users experience is different for each individual as it is dynamically loaded.
 
 ### <strong>SQL Databses</strong>
+Structured Query Language (SQL) databases are relational, meaning they store data in one or more tables that relate to each other. Tables relate to each other via ```keys```. Usually, each row in a table has a unique numeric ```primary key```, and tables can refer to each other's rows via ```foreign keys```. 
