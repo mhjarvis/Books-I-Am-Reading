@@ -49,3 +49,20 @@ Because of security concerns, most modern JavaScript code is executed within a s
 
 ## <strong>4. How Web Servers Work</strong>
 
+### <strong>Static and Dynamic Resources</strong>
+Web servers serve two types of content in response to HTTP requests:
+
+    Static resource - an HTML file, image file, or other type of file that the web server returns unaltered in HTTP responses. 
+    Dynamic resource - code, a script, or a template that the web server excutes or interprets in response to an HTTP request.
+
+### <strong>Static Resources</strong>
+A static response will show in the url with the ```.html``` suffix, indicating that the file corresponds to an HTML file on the server. 
+
+    Cloud Delivery Network (CDN) - used to improve delivery speeds of static files by storing duplicate copies of resources in data centers around the world. Can be the cause of security issues as you allow a third party to serve content under your security certificate.
+
+    Content Management Systems (CMS) - provide tools to build websites with little to no technical knowledge. Sites created this way can be more secure becauses a company is behind the code, but if individual users don't patch their sites, they leave themselves open for vulnerabilities.
+
+### <strong>Static Resources</strong>
+Static resources implement the use of a database. This makes it easier to add new products by adding new rows to a database and implementing content via JavaScript. The same goes for websites like Google, where users experience is different for each individual as it is dynamically loaded.
+
+### <strong>SQL Databses</strong>
