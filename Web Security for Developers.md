@@ -70,3 +70,17 @@ Structured Query Language (SQL) databases are relational, meaning they store dat
 
 ### <strong>NoSQL Databses</strong>
 SQL databasees are often bottlenecks for performance. Hence, the emergence of NoSQL, which sacrifices data integrity (some) for scalability. NoSQL databases are often schemaless, storing data in key-value form (or in JSON). 
+
+## <strong>5. How Progammers Work</strong>
+The 5 phases of SDLC: Design and Analysis, Writing Code, Pre-release Testing, the Release Process, and Post-release testing and observation.
+
+
+
+
+
+
+
+### <strong></strong>
+### <strong></strong>
+### <strong></strong>
+### <strong></strong>
