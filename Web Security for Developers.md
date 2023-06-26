@@ -77,13 +77,16 @@ The 5 phases of SDLC: Design and Analysis, Writing Code, Pre-release Testing, th
 ## <strong>6. Injection Attacks</strong>
 Injection attacks are those where an attacker injects external code into an application in an effort to take control of the application or read sensitive data. This is done by malicious HTTP requests. 
 
-SQL Injection uses SQL strings that are not securely constructed.
+### <strong>SQL Injection</strong>
+SQL Injection uses data queries to a database in an insecure fashion.
 
+### <strong></strong>
 Command Injection attacks uses code that makes insecure calls to operating system functions.
 
+### <strong></strong>
 Remote Code Execution allow attackers to run exploits inside the web server process itself. 
 
-
+File upload functions often enable command injections if they write uploaded files to disk with executable privileges. Write uploads to a third-party system or to a disk with appropriate permissions. 
 
 
 
