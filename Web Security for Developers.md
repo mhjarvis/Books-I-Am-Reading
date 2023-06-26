@@ -30,7 +30,7 @@ Some of the methods:
     OPTIONS - asks what methods are supported by the resource
     TRACE - contains exact copy of the original HTTP request
 
-HTTP responses usuallly includea protocol description (HTTP/1.1), a three-digit status code (200, 404), a status message (OK), headers providing metadata, and a body (data requested). 
+HTTP responses usually include protocol description (HTTP/1.1), a three-digit status code (200, 404), a status message (OK), headers providing metadata, and a body (data requested). 
 
 ### <strong>Stateful Connections</strong>
 Because there is constant exchange of information between user and server, there is a need for stateful connections - handshakes that allow parties to continue to communicate. This can be achieved via a HTTP session. Sessions are commonly tracked by the server sending back a ```Set-Cookie``` header in its initial HTTP response. The cookie that is stored contains some text pertaining to that web domain. Information from the cookie can then be used to uniquely identify the user and establish an HTTP session. 
@@ -41,7 +41,7 @@ TLS which leads to HTTPS. Requires TLS handshake, where both parties agree on an
 ## <strong>3. How Browsers Work</strong>
 
 ### <strong>Web Page Rendering</strong>
-The ```rendering pipeline``` is the software component responsible for transforming a web page's HTML into something you can view. When  HTTP response is received, the browser parses the body of the response into a Document Object Model (DOM). Styling is applied to the DOM. Once complete, the webpage is 'drawn' onscreen. JavaScript is also loaed and executed as it is encountered. 
+The ```rendering pipeline``` is the software component responsible for transforming a web page's HTML into something you can view. When  HTTP response is received, the browser parses the body of the response into a Document Object Model (DOM). Styling is applied to the DOM. Once complete, the webpage is 'drawn' onscreen. JavaScript is also loaded and executed as it is encountered. 
 
 JavaScript code will be executed when rendering a webpage, so ensure to use the ```defer``` attribute. Otherwise, reference errors will occur.
 
@@ -53,28 +53,35 @@ Because of security concerns, most modern JavaScript code is executed within a s
 Web servers serve two types of content in response to HTTP requests:
 
     Static resource - an HTML file, image file, or other type of file that the web server returns unaltered in HTTP responses. 
-    Dynamic resource - code, a script, or a template that the web server excutes or interprets in response to an HTTP request.
+    Dynamic resource - code, a script, or a template that the web server executes or interprets in response to an HTTP request.
 
 ### <strong>Static Resources</strong>
 A static response will show in the url with the ```.html``` suffix, indicating that the file corresponds to an HTML file on the server. 
 
     Cloud Delivery Network (CDN) - used to improve delivery speeds of static files by storing duplicate copies of resources in data centers around the world. Can be the cause of security issues as you allow a third party to serve content under your security certificate.
 
-    Content Management Systems (CMS) - provide tools to build websites with little to no technical knowledge. Sites created this way can be more secure becauses a company is behind the code, but if individual users don't patch their sites, they leave themselves open for vulnerabilities.
+    Content Management Systems (CMS) - provide tools to build websites with little to no technical knowledge. Sites created this way can be more secure because a company is behind the code, but if individual users don't patch their sites, they leave themselves open for vulnerabilities.
 
 ### <strong>Static Resources</strong>
 Static resources implement the use of a database. This makes it easier to add new products by adding new rows to a database and implementing content via JavaScript. The same goes for websites like Google, where users experience is different for each individual as it is dynamically loaded.
 
-### <strong>SQL Databses</strong>
+### <strong>SQL Databases</strong>
 Structured Query Language (SQL) databases are relational, meaning they store data in one or more tables that relate to each other. Tables relate to each other via ```keys```. Usually, each row in a table has a unique numeric ```primary key```, and tables can refer to each other's rows via ```foreign keys```. 
 
-### <strong>NoSQL Databses</strong>
-SQL databasees are often bottlenecks for performance. Hence, the emergence of NoSQL, which sacrifices data integrity (some) for scalability. NoSQL databases are often schemaless, storing data in key-value form (or in JSON). 
+### <strong>NoSQL Databases</strong>
+SQL databases are often bottlenecks for performance. Hence, the emergence of NoSQL, which sacrifices data integrity (some) for scalability. NoSQL databases are often schema-less, storing data in key-value form (or in JSON). 
 
-## <strong>5. How Progammers Work</strong>
+## <strong>5. How Programmers Work</strong>
 The 5 phases of SDLC: Design and Analysis, Writing Code, Pre-release Testing, the Release Process, and Post-release testing and observation.
 
+## <strong>6. Injection Attacks</strong>
+Injection attacks are those where an attacker injects external code into an application in an effort to take control of the application or read sensitive data. This is done by malicious HTTP requests. 
 
+SQL Injection uses SQL strings that are not securely constructed.
+
+Command Injection attacks uses code that makes insecure calls to operating system functions.
+
+Remote Code Execution allow attackers to run exploits inside the web server process itself. 
 
 
 
